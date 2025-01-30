@@ -1,0 +1,147 @@
+/* style.css */
+
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hace que ocupe toda la altura de la ventana */
+}
+
+/* Contenedor pequeño y centrado */
+.container {
+    width: 100%;
+    max-width: 400px; /* Establece un tamaño más pequeño */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h2 {
+    color: #9b1c1c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Campos de texto */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botones */
+button {
+    padding: 10px;
+    background-color: #9b1c1c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a1515;
+}
+
+/* Estilo de enlaces */
+a {
+    color: #9b1c1c;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de los mensajes */
+.error, .success {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.error {
+    background-color: #ffcccc;
+    color: #a70000;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.menu-item {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    gap: 20px;
+}
+
+/* Imagen de cada plato */
+.menu-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Información del plato */
+.menu-info {
+    flex: 1;
+}
+
+/* Nombre del plato */
+.menu-info h3 {
+    color: #9b1c1c;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Descripción del plato */
+.menu-description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Precio del plato */
+.menu-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4CAF50;
+}
